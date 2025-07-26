@@ -1,0 +1,9 @@
+public class mathoperations {
+    int number1 = 20;
+    int number2 = 10;
+    public static void main (String[] args) {
+        mathoperations math = new mathoperations();
+        System.out.println("number 1:" +math.number1);
+        System.out.println("number 2:" + math.number2);
+    }
+}
