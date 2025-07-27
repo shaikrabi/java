@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class looptask {
+    int instanceVar = 10;
+    static int staticVar = 20;
+
+    public int[] takeinput() {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter first number:");
+        int num1=sc.nextInt();
+        System.out.println("enter second number:");
+        int num2=sc.nextInt();
+        return new int[]{num1,num2};
+    }
+    public void performTask (int num1,int num2) {
+        int sum= num1 + num2;
+        System.out.println("sum(local variable):" +sum);
+        if (num1 % 2 == 0) {
+            System.out.println("number is even:" +num1);
+        }
+        else {
+            System.out.println("number is odd:" +num1);
+        }
+        System.out.println("printing numbers from1 1 to:" +num1);
+        for(int i=1;i<=num1;i++) {
+            System.out.println(i +" ");
+        }
+        System.out.println();
+        System.out.println("multiplication table of:"+num2);
+        for(int i=1; i<=5; i++) {
+            for(int j=1; j<=num2; j++) {
+                System.out.println((i*j)+ "\t:");
+            }
+            System.out.println();
+        }
+        System.out.println("instance variable value:"+instanceVar);
+        System.out.println("static variable value:"+ staticVar);
+    }
+    public static void main(String[] args) {
+        looptask obj = new looptask();
+        int[] inputs = obj.takeinput();
+        obj.performTask(inputs[0], inputs[1]);
+    }
+}
