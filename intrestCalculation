@@ -1,0 +1,16 @@
+public class intrestcalculation {
+    public static void main(String[] args) {
+        intrestcalculation obj = new intrestcalculation();
+        obj.intrestcalculation();
+    }
+    public void intrestcalculation() {
+        int principal = 100;
+        int time = 5;
+        int rate = 8;
+        float intrest = principal*time*rate/100;
+        System.out.println("PRINCIPAL AMOUNT: "+principal);
+        System.out.println("TIME PERIOD: "+time);
+        System.out.println("RATE OF INTREST: "+rate);
+        System.out.println("INTREST RATE: "+intrest);
+    }
+}
