@@ -1,0 +1,18 @@
+class Area {
+    int length;
+    int breath;
+    Area(int length,int breath) {
+        this.length = length;
+        this.breath = breath;
+    }
+    public void getArea() {
+        int Area = length*breath;
+        System.out.println("Area:" + Area);
+    }
+}
+class Main {
+public static void main(String args[]) {
+    Area rectangle = new Area(150,100);
+    rectangle.getArea();
+}
+}
