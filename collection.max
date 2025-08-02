@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Scanner;
+
+public class MaxInArrayList {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        ArrayList<Integer> numbers = new ArrayList<>();
+
+        // Taking 5 inputs from user
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Enter number " + i + ":");
+            int num = scanner.nextInt();
+            numbers.add(num); // Add number to ArrayList
+        }
+
+        // Use Collections.max() to find the largest number
+        int largest = Collections.max(numbers);
+
+        System.out.println("The largest number is: " + largest);
+
+        scanner.close();
+    }
+}
