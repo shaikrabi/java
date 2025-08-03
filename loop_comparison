@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class LoopComparison {
+    public static void main(String[] args) {
+System.out.println("Using for loop to print numbers 1 to 5:");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Number: " + i);
+        }
+        Scanner scanner = new Scanner(System.in);
+        int number;
+
+        System.out.println("\nEnter a positive number:");
+        number = scanner.nextInt();
+
+        while (number <= 0) {
+            System.out.println("You entered " + number + ". Please enter a positive number:");
+            number = scanner.nextInt();
+        }
+
+        System.out.println("Thank you! You entered a positive number: " + number);
+        scanner.close();
+    }
+}
